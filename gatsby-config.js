@@ -6,7 +6,6 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -22,5 +21,6 @@ module.exports = {
       },
       __key: "images",
     },
+    "gatsby-plugin-eslint",
   ],
 };
