@@ -36,6 +36,10 @@ const CategoriesWrapper = styled.div`
       order: -1;
     }
   }
+
+  @media (min-width: ${theme.screens.laptop}) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 `;
 
 function Footer() {

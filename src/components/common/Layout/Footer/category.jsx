@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { Link } from "gatsby";
 import theme from "../../../../utils/theme";
 
 const StyledCategory = styled.section`
@@ -22,6 +21,7 @@ const StyledCategory = styled.section`
     padding: 0;
     margin: 0;
     li {
+      text-align: center;
       a {
         color: ${theme.colors.white};
         opacity: 0.6;
@@ -38,7 +38,9 @@ function Category({ category, links }) {
       <ul>
         {links.map((link) => (
           <li key={link.text}>
-            <Link to={link.linkOrRoute}>{link.text}</Link>
+            <a target="_blank" rel="noreferrer" href={link.link}>
+              {link.text}
+            </a>
           </li>
         ))}
       </ul>

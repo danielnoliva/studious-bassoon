@@ -12,7 +12,7 @@ const Header = () => {
       <Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
       <Navbar />
       <Hamburger sidebar={sidebar} toggle={toggle} />
-      <Sidebar sidebar={sidebar} toggle={toggle} />
+      <Sidebar sidebar={sidebar} />
     </Wrapper>
   );
 };

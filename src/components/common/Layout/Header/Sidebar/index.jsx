@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import NavbarLinks from "../NavbarLinks";
 import { Wrapper } from "./styles";
 
-const Sidebar = ({ sidebar, toggle }) => {
+const Sidebar = ({ sidebar }) => {
   return (
-    <Wrapper active={sidebar} onClick={toggle}>
+    <Wrapper active={sidebar}>
       <NavbarLinks />
     </Wrapper>
   );
@@ -13,7 +13,6 @@ const Sidebar = ({ sidebar, toggle }) => {
 
 Sidebar.propTypes = {
   sidebar: PropTypes.bool.isRequired,
-  toggle: PropTypes.func.isRequired,
 };
 
 export default Sidebar;
