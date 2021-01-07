@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/studious-bassoon",
   siteMetadata: {
     title: "My Test Site",
   },
